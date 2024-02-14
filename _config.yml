@@ -12,6 +12,7 @@ paginate_path: "/blog/page:num/"
 title: Christian Ezeani
 subtitle: Full-Stack Developer
 theme: panthera-jekyll
+remote_theme: christianezeani/panthera-jekyll
 
 # left_side:
 #   background_image: "./assets/images/left-background.jpg"
