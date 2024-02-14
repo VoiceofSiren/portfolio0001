@@ -5,7 +5,7 @@
 
 body {
     font-family: sans-serif;
-    margin: 0;
+    margin: 0 20px; /* 좌우에 20px 여백 추가 */
 }
 
 /* 헤더 */
@@ -22,14 +22,16 @@ h1 {
 
 /* 메인 영역 */
 main {
-    display: flex;
+    width: calc(100% - 40px); /* 좌우 여백 20px씩 고려하여 너비 설정 */
 }
 
 /* 사이드바 */
 .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 20%;
-    background-color: #f5f5f5;
-    padding: 10px;
 }
 
 .sidebar ul {
@@ -49,8 +51,11 @@ main {
 
 /* 콘텐츠 영역 */
 .content {
-    width: 80%;
-    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% - 20%); /* 사이드바 너비 고려하여 너비 설정 */
 }
 
 h2 {
