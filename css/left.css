@@ -1,11 +1,6 @@
-.sidebar {
-    display: flex;
-    justify-content: center;    /* 수평 정렬 */
-}
-
 #myProfileImage {
+    text-align: center;
     display: block;
     width: 60%;
     max-width: 60%;
-    object-fit: contain;
 }
